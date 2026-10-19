@@ -53,7 +53,6 @@ select{min-width:210px}
 .legend span{display:flex;gap:7px;align-items:center}
 .dot{width:12px;height:12px;border-radius:50%;display:inline-block;border:2px solid var(--muted)}
 .dot.active{background:var(--accent);border-color:var(--accent)}
-.dot.transit{background:transparent;border-color:var(--accent)}
 .line{width:26px;border-top:3px solid var(--accent);display:inline-block}
 .halo{width:16px;height:16px;border:2px dashed var(--accent);border-radius:50%;display:inline-block}
 .ring{fill:none;stroke:var(--line);stroke-width:2}
@@ -62,7 +61,6 @@ select{min-width:210px}
 .node text{fill:var(--text);font-size:10px;font-weight:700;text-anchor:middle;dominant-baseline:middle;pointer-events:none}
 .node .addr{fill:var(--muted);font-size:8px}
 .node.active circle{fill:#143044;stroke:var(--accent);stroke-width:3}
-.node.transit circle{fill:var(--panel);stroke:var(--accent);stroke-width:3;stroke-dasharray:3 3}
 .route{fill:none;stroke:var(--accent);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
 .semantic-edge{stroke:var(--accent);stroke-width:3;stroke-dasharray:8 6;opacity:.9}
 .operator-halo{fill:none;stroke:var(--warn);stroke-width:3;stroke-dasharray:5 4}
