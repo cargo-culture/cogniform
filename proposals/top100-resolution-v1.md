@@ -40,7 +40,8 @@ A semantic bond may be drawn as one or more **legal adjacent physical segments**
 - Ring/spoke geometry remains hard.
 - The **semantic endpoints** are the semes that participate in the concept.
 - Intermediate seme positions can be used as **transit points** without activating their meanings.
-- A transit point is drawn as a small open bypass ring around the node.
+- **An inactive seme remains visually inactive even when a bond passes through its position.** The bond line simply continues through it.
+- A seme participates in the concept only when its node is explicitly marked active.
 - Direct adjacency remains preferred because it is shorter and visually cheaper.
 
 This preserves the original geometry while removing accidental semantic impossibility.
@@ -53,9 +54,9 @@ Semantic bond:
 
 At the present neutral layout it can be routed physically as:
 
-`R1b WITH — [R1a] — [R2a] — R3a PLACE`
+`R1b WITH — R1a — R2a — R3a PLACE`
 
-Square brackets mean **transit only**; NEGATION and IN are not part of the concept.
+Only **R1b WITH** and **R3a PLACE** are marked active. R1a and R2a remain visually ordinary/inactive even though the line passes through their positions; NEGATION and IN therefore do not enter the concept.
 
 ### Notation split
 
@@ -63,9 +64,9 @@ Semantic notation records meaning:
 
 `R1b—R3a`
 
-Optional route notation records the particular drawing:
+Optional route notation can record the particular drawing:
 
-`R1b-[R1a]-[R2a]-R3a`
+`R1b→R1a→R2a→R3a  (active: R1b, R3a)`
 
 Meaning is therefore stable even if a different ring rotation produces a different legal route.
 
@@ -313,11 +314,12 @@ Under this proposal:
 These are deliberately provisional:
 
 - **filled node** — active seme
-- **solid bond** — semantic bond
-- **open bypass ring** — physical transit through an inactive seme position
+- **solid bond** — semantic bond / physical route
 - **query halo** — requested/unknown value
 - **index pin** — discourse anchor
 - **arrow / +− badge on ORDER** — orientation along a dimension
 - **measure badge** — quantitative payload
+
+**Transit rule refinement:** a bond passing through an inactive seme does not mark or activate that seme. Node activation alone determines semantic participation.
 
 Nothing in this proposal becomes canonical until explicitly approved.
