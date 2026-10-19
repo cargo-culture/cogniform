@@ -42,7 +42,7 @@
 
         <svg id="previewSvg" viewBox="0 0 700 700" role="img" aria-labelledby="svgTitle svgDesc">
           <title id="svgTitle">Cogniform proposal preview</title>
-          <desc id="svgDesc">Four rings with active semes, routed bonds, transit nodes, and structural marks.</desc>
+          <desc id="svgDesc">Four rings with active semes, routed bonds passing through unmarked inactive semes, and structural marks.</desc>
           <g id="baseLayer"></g>
           <g id="routeLayer"></g>
           <g id="nodeLayer"></g>
@@ -92,14 +92,11 @@
       <h2>Why routed bonds fix the geometry</h2>
       <p>
         A semantic bond is distinct from the path used to draw it. Every physical
-        segment still follows the existing ring/spoke lattice. Intermediate seme
-        positions are explicit transit points and do not contribute meaning.
-        Direct bonds remain preferred because they are shorter.
+        segment still follows the existing ring/spoke lattice. Intermediate seme positions may lie under the route, but they remain completely inactive and unmarked. A seme contributes meaning only when its node is explicitly active. Direct bonds remain preferred because they are shorter.
       </p>
       <div class="legend">
         <span><i class="dot active"></i> active seme</span>
         <span><i class="line"></i> semantic route</span>
-        <span><i class="dot transit"></i> inactive transit</span>
         <span><i class="halo"></i> query / operator mark</span>
       </div>
     </section>
