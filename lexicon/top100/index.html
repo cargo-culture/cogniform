@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0f17">
+  <title>Cogniform · Top 100 English Words</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <div class="eyebrow">APPROVED LEXICON · v1.0</div>
+        <h1>100 most common English words</h1>
+        <p>Each English word is treated as a semantic probe. The display shows the approved cognitoform, structural operators, and a legal neutral-orientation route for each semantic bond.</p>
+      </div>
+      <a href="../../">Editor</a>
+    </header>
+
+    <section class="controls">
+      <input id="search" type="search" placeholder="Search word, seme, or reading…" autocomplete="off">
+      <select id="filter">
+        <option value="all">All 100 words</option>
+        <option value="cognitoform">Semantic cognitoforms</option>
+        <option value="structural">Structural-only forms</option>
+        <option value="polysemous">Polysemous entries</option>
+      </select>
+    </section>
+
+    <section class="layout">
+      <nav class="word-list" aria-label="Top 100 words">
+        <div id="count" class="count"></div>
+        <div id="wordButtons"></div>
+      </nav>
+
+      <article class="detail">
+        <div class="detail-head">
+          <div>
+            <div id="rank" class="rank"></div>
+            <h2 id="word"></h2>
+            <p id="definition"></p>
+          </div>
+          <div id="typeBadge" class="type-badge"></div>
+        </div>
+
+        <div id="senseTabs" class="sense-tabs" hidden></div>
+
+        <div class="visual-grid">
+          <div class="svg-wrap">
+            <svg id="formSvg" viewBox="0 0 760 760" role="img" aria-label="Cognitoform rendering">
+              <g id="baseLayer"></g>
+              <g id="routeLayer"></g>
+              <g id="nodeLayer"></g>
+              <g id="operatorLayer"></g>
+            </svg>
+          </div>
+
+          <div class="reading-panel">
+            <h3>Reading</h3>
+            <p id="reading"></p>
+
+            <h3>Canonical notation</h3>
+            <code id="notation"></code>
+
+            <h3>Active semes</h3>
+            <div id="semes" class="chips"></div>
+
+            <h3>Operators</h3>
+            <div id="operators" class="chips"></div>
+
+            <h3>Notes</h3>
+            <p id="notes"></p>
+          </div>
+        </div>
+
+        <div class="rule-note">
+          Bond routes may pass through inactive seme positions. Those positions remain visually unmarked and contribute no meaning; only highlighted nodes are active.
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

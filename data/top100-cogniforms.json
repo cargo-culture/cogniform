@@ -1,0 +1,3190 @@
+{
+  "version": "0.1-draft",
+  "status": "provisional semantic derivations; not canonical lexical entries",
+  "source": "https://raw.githubusercontent.com/evan-007/ngsl-dictionary/master/NGSL-Headwords-and-Definitions-byFreq.csv",
+  "methodology": [
+    "Use the first 100 NGSL headwords in frequency order.",
+    "Derive the smallest seme structure that captures the supplied definition without forcing English grammar into the ontology.",
+    "Treat repeated semantic cores across different English words as legitimate collapses.",
+    "Audit each intended bond against the current four-ring seme layout.",
+    "Flag distinctions that the present 24-seme inventory cannot express without convention."
+  ],
+  "seme_coordinates": {
+    "NEGATION": "R1a",
+    "WITH": "R1b",
+    "QUALITY": "R1c",
+    "CHANGE": "R1d",
+    "EXIST": "R1e",
+    "THING": "R1f",
+    "IN": "R2a",
+    "MANY": "R2b",
+    "ORDER": "R2c",
+    "TIME": "R2d",
+    "DO": "R2e",
+    "ONE": "R2f",
+    "PLACE": "R3a",
+    "SIZE": "R3b",
+    "POWER": "R3c",
+    "CAUSE": "R3d",
+    "NECESSITY": "R3e",
+    "POSSIBILITY": "R3f",
+    "ALIVE": "R4a",
+    "PERCEIVE": "R4b",
+    "KNOW": "R4c",
+    "SIGN": "R4d",
+    "VALUE": "R4e",
+    "WANT": "R4f"
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "word": "the",
+      "definition": "points to an already identified referent",
+      "semes": [
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Definiteness as a sign anchored to shared/known context.",
+      "addresses": [
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 2,
+      "word": "be",
+      "definition": "shows identity of a thing",
+      "semes": [
+        "ONE"
+      ],
+      "bonds": [],
+      "flags": [
+        "conventional"
+      ],
+      "notes": "ONE supplies identity/sameness; copular predication remains structural/contextual.",
+      "addresses": [
+        "R2f ONE"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 3,
+      "word": "of",
+      "definition": "belonging to or connected with",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Broad relational core.",
+      "addresses": [
+        "R1b WITH"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 4,
+      "word": "and",
+      "definition": "joins words or groups",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Conceptual conjunction collapses to WITH.",
+      "addresses": [
+        "R1b WITH"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 5,
+      "word": "to",
+      "definition": "indicates place or direction",
+      "semes": [
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Directed-place relation; source/goal polarity is not yet encoded.",
+      "addresses": [
+        "R2c ORDER",
+        "R3a PLACE"
+      ],
+      "bond_notation": [
+        "R2c—R3a (ORDER—PLACE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 6,
+      "word": "a",
+      "definition": "an unspecified single thing under consideration",
+      "semes": [
+        "ONE",
+        "THING"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "THING"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Indefinite singular entity.",
+      "addresses": [
+        "R2f ONE",
+        "R1f THING"
+      ],
+      "bond_notation": [
+        "R2f—R1f (ONE—THING)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 7,
+      "word": "in",
+      "definition": "inside or surrounded by",
+      "semes": [
+        "IN"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R2a IN"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 8,
+      "word": "have",
+      "definition": "possess, own, or hold",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Possession is a WITH-relation; possessor/possessed roles are contextual.",
+      "addresses": [
+        "R1b WITH"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 9,
+      "word": "it",
+      "definition": "a previously mentioned thing",
+      "semes": [
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "conventional"
+      ],
+      "notes": "Anaphoric reference shares the definiteness core; pronoun class is conventional.",
+      "addresses": [
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 10,
+      "word": "you",
+      "definition": "the person being addressed",
+      "semes": [
+        "ALIVE",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "ALIVE",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Current inventory has no addressee/speaker-role distinction.",
+      "addresses": [
+        "R4a ALIVE",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R4a—R4d (ALIVE—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R4a–R4d cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 11,
+      "word": "for",
+      "definition": "purpose or need",
+      "semes": [
+        "NECESSITY",
+        "WANT"
+      ],
+      "bonds": [
+        [
+          "NECESSITY",
+          "WANT"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Teleological/need relation.",
+      "addresses": [
+        "R3e NECESSITY",
+        "R4f WANT"
+      ],
+      "bond_notation": [
+        "R3e—R4f (NECESSITY—WANT)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 12,
+      "word": "not",
+      "definition": "makes an expression negative",
+      "semes": [
+        "NEGATION"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R1a NEGATION"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 13,
+      "word": "that",
+      "definition": "identifies a specific person, thing, fact, or idea",
+      "semes": [
+        "PLACE",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "PLACE",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Deictic identification; distal vs proximal is not encoded.",
+      "addresses": [
+        "R3a PLACE",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R3a—R4c (PLACE—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 14,
+      "word": "on",
+      "definition": "contact/support at a location",
+      "semes": [
+        "WITH",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "PLACE"
+        ]
+      ],
+      "flags": [
+        "blocked-current-layout"
+      ],
+      "notes": "Semantically natural pair; current geometry separates the semes by an intervening ring.",
+      "addresses": [
+        "R1b WITH",
+        "R3a PLACE"
+      ],
+      "bond_notation": [
+        "R1b—R3a (WITH—PLACE)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R1b–R3a cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 15,
+      "word": "with",
+      "definition": "together or in association",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R1b WITH"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 16,
+      "word": "do",
+      "definition": "perform an action or activity",
+      "semes": [
+        "DO"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R2e DO"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 17,
+      "word": "as",
+      "definition": "the same degree or amount",
+      "semes": [
+        "ONE",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "SIZE"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Equality of magnitude.",
+      "addresses": [
+        "R2f ONE",
+        "R3b SIZE"
+      ],
+      "bond_notation": [
+        "R2f—R3b (ONE—SIZE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 18,
+      "word": "he",
+      "definition": "a previously referenced male person",
+      "semes": [
+        "ALIVE",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "ALIVE",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Male/female distinction is absent.",
+      "addresses": [
+        "R4a ALIVE",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R4a—R4c (ALIVE—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R4a–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 19,
+      "word": "we",
+      "definition": "speaker plus one or more others",
+      "semes": [
+        "ALIVE",
+        "MANY"
+      ],
+      "bonds": [
+        [
+          "ALIVE",
+          "MANY"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Speaker-role is absent.",
+      "addresses": [
+        "R4a ALIVE",
+        "R2b MANY"
+      ],
+      "bond_notation": [
+        "R4a—R2b (ALIVE—MANY)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R4a–R2b cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 20,
+      "word": "this",
+      "definition": "identifies a specific nearby referent",
+      "semes": [
+        "PLACE",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "PLACE",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap"
+      ],
+      "notes": "Near/far deixis is not distinguished, so THIS and THAT collapse semantically.",
+      "addresses": [
+        "R3a PLACE",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R3a—R4c (PLACE—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 21,
+      "word": "at",
+      "definition": "indicates a location",
+      "semes": [
+        "PLACE"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R3a PLACE"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 22,
+      "word": "they",
+      "definition": "previously mentioned plural entities",
+      "semes": [
+        "MANY",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "blocked-current-layout"
+      ],
+      "notes": "Plural anaphora is semantically clear.",
+      "addresses": [
+        "R2b MANY",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R2b—R4c (MANY—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R2b–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 23,
+      "word": "but",
+      "definition": "joins while contrasting",
+      "semes": [
+        "NEGATION",
+        "WITH"
+      ],
+      "bonds": [
+        [
+          "NEGATION",
+          "WITH"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Connection plus opposition/contrast.",
+      "addresses": [
+        "R1a NEGATION",
+        "R1b WITH"
+      ],
+      "bond_notation": [
+        "R1a—R1b (NEGATION—WITH)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 24,
+      "word": "from",
+      "definition": "marks an origin or starting direction",
+      "semes": [
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "flags": [
+        "inventory-gap"
+      ],
+      "notes": "Same semantic core as TO; source vs goal polarity is not represented.",
+      "addresses": [
+        "R2c ORDER",
+        "R3a PLACE"
+      ],
+      "bond_notation": [
+        "R2c—R3a (ORDER—PLACE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 25,
+      "word": "by",
+      "definition": "beside or near a place",
+      "semes": [
+        "WITH",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "PLACE"
+        ]
+      ],
+      "flags": [
+        "blocked-current-layout"
+      ],
+      "notes": "Proximity/contact relation.",
+      "addresses": [
+        "R1b WITH",
+        "R3a PLACE"
+      ],
+      "bond_notation": [
+        "R1b—R3a (WITH—PLACE)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R1b–R3a cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 26,
+      "word": "will",
+      "definition": "expected future event",
+      "semes": [
+        "ORDER",
+        "TIME",
+        "POSSIBILITY"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "TIME"
+        ],
+        [
+          "TIME",
+          "POSSIBILITY"
+        ]
+      ],
+      "flags": [
+        "inventory-gap"
+      ],
+      "notes": "Future temporal polarity is not separately encoded.",
+      "addresses": [
+        "R2c ORDER",
+        "R2d TIME",
+        "R3f POSSIBILITY"
+      ],
+      "bond_notation": [
+        "R2c—R2d (ORDER—TIME)",
+        "R2d—R3f (TIME—POSSIBILITY)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 27,
+      "word": "or",
+      "definition": "links alternatives",
+      "semes": [
+        "MANY",
+        "POSSIBILITY"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "POSSIBILITY"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Multiple possible alternatives.",
+      "addresses": [
+        "R2b MANY",
+        "R3f POSSIBILITY"
+      ],
+      "bond_notation": [
+        "R2b—R3f (MANY—POSSIBILITY)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 28,
+      "word": "his",
+      "definition": "belonging to a previously referenced male",
+      "semes": [
+        "WITH",
+        "ALIVE",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "ALIVE"
+        ],
+        [
+          "ALIVE",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Gender and grammatical possessor role are not fully represented.",
+      "addresses": [
+        "R1b WITH",
+        "R4a ALIVE",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R1b—R4a (WITH—ALIVE)",
+        "R4a—R4c (ALIVE—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R1b–R4a cannot bond directly",
+          "R4a–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 29,
+      "word": "say",
+      "definition": "express something with words or voice",
+      "semes": [
+        "DO",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "DO",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "blocked-current-layout"
+      ],
+      "notes": "Action plus sign/utterance.",
+      "addresses": [
+        "R2e DO",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R2e—R4d (DO—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R2e–R4d cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 30,
+      "word": "go",
+      "definition": "move or travel from one place to another",
+      "semes": [
+        "CHANGE",
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "ORDER"
+        ],
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Directed change of place.",
+      "addresses": [
+        "R1d CHANGE",
+        "R2c ORDER",
+        "R3a PLACE"
+      ],
+      "bond_notation": [
+        "R1d—R2c (CHANGE—ORDER)",
+        "R2c—R3a (ORDER—PLACE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 31,
+      "word": "she",
+      "definition": "a previously referenced female person",
+      "semes": [
+        "ALIVE",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "ALIVE",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Female/male distinction is absent; core otherwise matches HE.",
+      "addresses": [
+        "R4a ALIVE",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R4a—R4c (ALIVE—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R4a–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 32,
+      "word": "so",
+      "definition": "to a stated or suggested degree",
+      "semes": [
+        "SIZE"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Degree is treated as magnitude.",
+      "addresses": [
+        "R3b SIZE"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 33,
+      "word": "all",
+      "definition": "the whole or total amount",
+      "semes": [
+        "ONE",
+        "IN",
+        "MANY"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "IN"
+        ],
+        [
+          "IN",
+          "MANY"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Many contained as one whole.",
+      "addresses": [
+        "R2f ONE",
+        "R2a IN",
+        "R2b MANY"
+      ],
+      "bond_notation": [
+        "R2f—R2a (ONE—IN)",
+        "R2a—R2b (IN—MANY)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 34,
+      "word": "about",
+      "definition": "on the subject of or concerning",
+      "semes": [
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Semantic-content/topic relation; grammatical ABOUT remains conventional.",
+      "addresses": [
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 35,
+      "word": "if",
+      "definition": "introduces a condition for something to happen",
+      "semes": [
+        "CAUSE",
+        "POSSIBILITY"
+      ],
+      "bonds": [
+        [
+          "CAUSE",
+          "POSSIBILITY"
+        ]
+      ],
+      "flags": [
+        "blocked-current-layout"
+      ],
+      "notes": "Condition as possible causal dependency.",
+      "addresses": [
+        "R3d CAUSE",
+        "R3f POSSIBILITY"
+      ],
+      "bond_notation": [
+        "R3d—R3f (CAUSE—POSSIBILITY)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R3d–R3f cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 36,
+      "word": "one",
+      "definition": "a single person or thing",
+      "semes": [
+        "ONE"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R2f ONE"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 37,
+      "word": "my",
+      "definition": "belonging to the speaker",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "flags": [
+        "inventory-gap",
+        "conventional"
+      ],
+      "notes": "Possession is expressible; speaker-role is not.",
+      "addresses": [
+        "R1b WITH"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 38,
+      "word": "know",
+      "definition": "have in the mind; be aware",
+      "semes": [
+        "KNOW"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R4c KNOW"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 39,
+      "word": "there",
+      "definition": "in that place or location",
+      "semes": [
+        "PLACE",
+        "KNOW"
+      ],
+      "bonds": [
+        [
+          "PLACE",
+          "KNOW"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Known/contextually specified place; distal deixis is conventional.",
+      "addresses": [
+        "R3a PLACE",
+        "R4c KNOW"
+      ],
+      "bond_notation": [
+        "R3a—R4c (PLACE—KNOW)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 40,
+      "word": "which",
+      "definition": "asks which member or members of a group",
+      "semes": [
+        "NEGATION",
+        "KNOW",
+        "SIGN",
+        "ONE",
+        "MANY"
+      ],
+      "bonds": [
+        [
+          "NEGATION",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ],
+        [
+          "ONE",
+          "MANY"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Interrogativity/selection is not primitive.",
+      "addresses": [
+        "R1a NEGATION",
+        "R4c KNOW",
+        "R4d SIGN",
+        "R2f ONE",
+        "R2b MANY"
+      ],
+      "bond_notation": [
+        "R1a—R4c (NEGATION—KNOW)",
+        "R4c—R4d (KNOW—SIGN)",
+        "R2f—R2b (ONE—MANY)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R1a–R4c cannot bond directly",
+          "R2f–R2b cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 41,
+      "word": "can",
+      "definition": "be able to do",
+      "semes": [
+        "POWER"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Ability/capacity.",
+      "addresses": [
+        "R3c POWER"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 42,
+      "word": "get",
+      "definition": "obtain or receive",
+      "semes": [
+        "CHANGE",
+        "WITH"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "WITH"
+        ]
+      ],
+      "flags": [
+        "blocked-current-layout"
+      ],
+      "notes": "Acquisition as change of relation/possession.",
+      "addresses": [
+        "R1d CHANGE",
+        "R1b WITH"
+      ],
+      "bond_notation": [
+        "R1d—R1b (CHANGE—WITH)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R1d–R1b cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 43,
+      "word": "her",
+      "definition": "a previously referenced female person",
+      "semes": [
+        "ALIVE",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "ALIVE",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Gender and case/possessive role are absent.",
+      "addresses": [
+        "R4a ALIVE",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R4a—R4c (ALIVE—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R4a–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 44,
+      "word": "would",
+      "definition": "a conceived or conditional possible event",
+      "semes": [
+        "TIME",
+        "POSSIBILITY",
+        "KNOW"
+      ],
+      "bonds": [
+        [
+          "TIME",
+          "POSSIBILITY"
+        ],
+        [
+          "POSSIBILITY",
+          "KNOW"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Mentally entertained possibility in time; conditional/counterfactual force is conventional.",
+      "addresses": [
+        "R2d TIME",
+        "R3f POSSIBILITY",
+        "R4c KNOW"
+      ],
+      "bond_notation": [
+        "R2d—R3f (TIME—POSSIBILITY)",
+        "R3f—R4c (POSSIBILITY—KNOW)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 45,
+      "word": "think",
+      "definition": "hold a belief or idea in mind",
+      "semes": [
+        "KNOW"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "KNOW is non-factive cognition, so it covers THINK without asserting truth.",
+      "addresses": [
+        "R4c KNOW"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 46,
+      "word": "like",
+      "definition": "find agreeable or enjoyable",
+      "semes": [
+        "VALUE",
+        "WANT"
+      ],
+      "bonds": [
+        [
+          "VALUE",
+          "WANT"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Positive valuation/desire.",
+      "addresses": [
+        "R4e VALUE",
+        "R4f WANT"
+      ],
+      "bond_notation": [
+        "R4e—R4f (VALUE—WANT)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 47,
+      "word": "more",
+      "definition": "greater amount, number, or size",
+      "semes": [
+        "ORDER",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "SIZE"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Magnitude ordered comparatively.",
+      "addresses": [
+        "R2c ORDER",
+        "R3b SIZE"
+      ],
+      "bond_notation": [
+        "R2c—R3b (ORDER—SIZE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 48,
+      "word": "their",
+      "definition": "belonging to a previously mentioned group",
+      "semes": [
+        "WITH",
+        "MANY",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "MANY"
+        ],
+        [
+          "MANY",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "blocked-current-layout"
+      ],
+      "notes": "Group possession plus anaphoric reference.",
+      "addresses": [
+        "R1b WITH",
+        "R2b MANY",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R1b—R2b (WITH—MANY)",
+        "R2b—R4c (MANY—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R2b–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 49,
+      "word": "your",
+      "definition": "belonging to the addressee",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "flags": [
+        "inventory-gap",
+        "conventional"
+      ],
+      "notes": "Possession is expressible; addressee-role is not.",
+      "addresses": [
+        "R1b WITH"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 50,
+      "word": "when",
+      "definition": "asks at what time",
+      "semes": [
+        "TIME",
+        "NEGATION",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "NEGATION",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ],
+        [
+          "TIME",
+          "KNOW"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Needs an interrogative/unknown operator.",
+      "addresses": [
+        "R2d TIME",
+        "R1a NEGATION",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R1a—R4c (NEGATION—KNOW)",
+        "R4c—R4d (KNOW—SIGN)",
+        "R2d—R4c (TIME—KNOW)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R1a–R4c cannot bond directly",
+          "R2d–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 51,
+      "word": "what",
+      "definition": "asks for information about a thing",
+      "semes": [
+        "THING",
+        "NEGATION",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "THING",
+          "NEGATION"
+        ],
+        [
+          "NEGATION",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Unknown-thing question; interrogativity is not primitive.",
+      "addresses": [
+        "R1f THING",
+        "R1a NEGATION",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R1f—R1a (THING—NEGATION)",
+        "R1a—R4c (NEGATION—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R1a–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 52,
+      "word": "make",
+      "definition": "build, create, or produce",
+      "semes": [
+        "CHANGE",
+        "DO",
+        "CAUSE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "DO"
+        ],
+        [
+          "DO",
+          "CAUSE"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Action causing change.",
+      "addresses": [
+        "R1d CHANGE",
+        "R2e DO",
+        "R3d CAUSE"
+      ],
+      "bond_notation": [
+        "R1d—R2e (CHANGE—DO)",
+        "R2e—R3d (DO—CAUSE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 53,
+      "word": "time",
+      "definition": "measured temporal extent",
+      "semes": [
+        "TIME"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R2d TIME"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 54,
+      "word": "who",
+      "definition": "asks which person or people",
+      "semes": [
+        "ALIVE",
+        "NEGATION",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "ALIVE",
+          "KNOW"
+        ],
+        [
+          "NEGATION",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Unknown-person question; interrogativity is not primitive.",
+      "addresses": [
+        "R4a ALIVE",
+        "R1a NEGATION",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R4a—R4c (ALIVE—KNOW)",
+        "R1a—R4c (NEGATION—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R4a–R4c cannot bond directly",
+          "R1a–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 55,
+      "word": "see",
+      "definition": "become aware through vision",
+      "semes": [
+        "PERCEIVE",
+        "KNOW"
+      ],
+      "bonds": [
+        [
+          "PERCEIVE",
+          "KNOW"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Perception yielding cognition/awareness.",
+      "addresses": [
+        "R4b PERCEIVE",
+        "R4c KNOW"
+      ],
+      "bond_notation": [
+        "R4b—R4c (PERCEIVE—KNOW)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 56,
+      "word": "up",
+      "definition": "movement toward a higher place",
+      "semes": [
+        "CHANGE",
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "ORDER"
+        ],
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "flags": [
+        "inventory-gap"
+      ],
+      "notes": "Movement is expressible; vertical polarity/high-vs-low is not.",
+      "addresses": [
+        "R1d CHANGE",
+        "R2c ORDER",
+        "R3a PLACE"
+      ],
+      "bond_notation": [
+        "R1d—R2c (CHANGE—ORDER)",
+        "R2c—R3a (ORDER—PLACE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 57,
+      "word": "people",
+      "definition": "human beings, plural",
+      "semes": [
+        "MANY",
+        "ALIVE"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "ALIVE"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Human-vs-nonhuman living entity is not encoded.",
+      "addresses": [
+        "R2b MANY",
+        "R4a ALIVE"
+      ],
+      "bond_notation": [
+        "R2b—R4a (MANY—ALIVE)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R2b–R4a cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 58,
+      "word": "some",
+      "definition": "an unspecified amount or number",
+      "semes": [
+        "MANY"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Indefinite quantity is contextual.",
+      "addresses": [
+        "R2b MANY"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 59,
+      "word": "out",
+      "definition": "away from the inside or center",
+      "semes": [
+        "NEGATION",
+        "IN"
+      ],
+      "bonds": [
+        [
+          "NEGATION",
+          "IN"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Captures outside/not-in; motion away is left to context.",
+      "addresses": [
+        "R1a NEGATION",
+        "R2a IN"
+      ],
+      "bond_notation": [
+        "R1a—R2a (NEGATION—IN)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 60,
+      "word": "me",
+      "definition": "the speaker",
+      "semes": [
+        "ONE",
+        "ALIVE"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "ALIVE"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Speaker-role is absent.",
+      "addresses": [
+        "R2f ONE",
+        "R4a ALIVE"
+      ],
+      "bond_notation": [
+        "R2f—R4a (ONE—ALIVE)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R2f–R4a cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 61,
+      "word": "good",
+      "definition": "high quality or positive evaluation",
+      "semes": [
+        "VALUE"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "VALUE supplies positive evaluation; polarity is lexical/conventional.",
+      "addresses": [
+        "R4e VALUE"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 62,
+      "word": "other",
+      "definition": "a different one from an already mentioned referent",
+      "semes": [
+        "NEGATION",
+        "ONE"
+      ],
+      "bonds": [
+        [
+          "NEGATION",
+          "ONE"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "A non-identical one; discourse anchor remains contextual.",
+      "addresses": [
+        "R1a NEGATION",
+        "R2f ONE"
+      ],
+      "bond_notation": [
+        "R1a—R2f (NEGATION—ONE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 63,
+      "word": "year",
+      "definition": "a standard large unit of time",
+      "semes": [
+        "TIME",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "TIME",
+          "SIZE"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "The exact unit YEAR must be lexicalized.",
+      "addresses": [
+        "R2d TIME",
+        "R3b SIZE"
+      ],
+      "bond_notation": [
+        "R2d—R3b (TIME—SIZE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 64,
+      "word": "well",
+      "definition": "in a successful or good manner",
+      "semes": [
+        "DO",
+        "POWER",
+        "VALUE"
+      ],
+      "bonds": [
+        [
+          "DO",
+          "POWER"
+        ],
+        [
+          "POWER",
+          "VALUE"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Effective action with positive value.",
+      "addresses": [
+        "R2e DO",
+        "R3c POWER",
+        "R4e VALUE"
+      ],
+      "bond_notation": [
+        "R2e—R3c (DO—POWER)",
+        "R3c—R4e (POWER—VALUE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 65,
+      "word": "our",
+      "definition": "belonging to speaker plus others",
+      "semes": [
+        "WITH",
+        "MANY"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "MANY"
+        ]
+      ],
+      "flags": [
+        "inventory-gap"
+      ],
+      "notes": "Plural possession is expressible; speaker-inclusive role is not.",
+      "addresses": [
+        "R1b WITH",
+        "R2b MANY"
+      ],
+      "bond_notation": [
+        "R1b—R2b (WITH—MANY)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 66,
+      "word": "very",
+      "definition": "to a high degree",
+      "semes": [
+        "SIZE"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "High degree relies on lexical polarity.",
+      "addresses": [
+        "R3b SIZE"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 67,
+      "word": "just",
+      "definition": "exactly or to an exact degree or manner",
+      "semes": [
+        "ONE",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "SIZE"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Singular/exact magnitude.",
+      "addresses": [
+        "R2f ONE",
+        "R3b SIZE"
+      ],
+      "bond_notation": [
+        "R2f—R3b (ONE—SIZE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 68,
+      "word": "them",
+      "definition": "previously mentioned plural entities",
+      "semes": [
+        "MANY",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "blocked-current-layout"
+      ],
+      "notes": "Plural anaphoric reference.",
+      "addresses": [
+        "R2b MANY",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R2b—R4c (MANY—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R2b–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 69,
+      "word": "no",
+      "definition": "negative response or not at all",
+      "semes": [
+        "NEGATION"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R1a NEGATION"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 70,
+      "word": "take",
+      "definition": "carry or move something",
+      "semes": [
+        "CHANGE",
+        "DO",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "DO"
+        ],
+        [
+          "DO",
+          "PLACE"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Action that moves something; possession/hand/tool roles are not encoded.",
+      "addresses": [
+        "R1d CHANGE",
+        "R2e DO",
+        "R3a PLACE"
+      ],
+      "bond_notation": [
+        "R1d—R2e (CHANGE—DO)",
+        "R2e—R3a (DO—PLACE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 71,
+      "word": "because",
+      "definition": "for a reason",
+      "semes": [
+        "CAUSE"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R3d CAUSE"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 72,
+      "word": "come",
+      "definition": "move toward someone or approach",
+      "semes": [
+        "CHANGE",
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "ORDER"
+        ],
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "flags": [
+        "inventory-gap"
+      ],
+      "notes": "Movement is expressible; toward-speaker perspective is not.",
+      "addresses": [
+        "R1d CHANGE",
+        "R2c ORDER",
+        "R3a PLACE"
+      ],
+      "bond_notation": [
+        "R1d—R2c (CHANGE—ORDER)",
+        "R2c—R3a (ORDER—PLACE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 73,
+      "word": "could",
+      "definition": "past ability or possibility",
+      "semes": [
+        "TIME",
+        "POSSIBILITY"
+      ],
+      "bonds": [
+        [
+          "TIME",
+          "POSSIBILITY"
+        ]
+      ],
+      "flags": [
+        "inventory-gap"
+      ],
+      "notes": "Possibility in time; past polarity and ability nuance are not explicit.",
+      "addresses": [
+        "R2d TIME",
+        "R3f POSSIBILITY"
+      ],
+      "bond_notation": [
+        "R2d—R3f (TIME—POSSIBILITY)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 74,
+      "word": "use",
+      "definition": "do something with another thing",
+      "semes": [
+        "WITH",
+        "DO"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "DO"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Action involving another entity.",
+      "addresses": [
+        "R1b WITH",
+        "R2e DO"
+      ],
+      "bond_notation": [
+        "R1b—R2e (WITH—DO)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 75,
+      "word": "work",
+      "definition": "activity requiring mental or physical effort",
+      "semes": [
+        "DO",
+        "POWER"
+      ],
+      "bonds": [
+        [
+          "DO",
+          "POWER"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Exerted/capable action.",
+      "addresses": [
+        "R2e DO",
+        "R3c POWER"
+      ],
+      "bond_notation": [
+        "R2e—R3c (DO—POWER)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 76,
+      "word": "then",
+      "definition": "at the mentioned time or after that",
+      "semes": [
+        "ORDER",
+        "TIME"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "TIME"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Ordered temporal position; exact deictic anchor comes from context.",
+      "addresses": [
+        "R2c ORDER",
+        "R2d TIME"
+      ],
+      "bond_notation": [
+        "R2c—R2d (ORDER—TIME)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 77,
+      "word": "now",
+      "definition": "the present time",
+      "semes": [
+        "EXIST",
+        "TIME"
+      ],
+      "bonds": [
+        [
+          "EXIST",
+          "TIME"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Actual/instantiated time = present.",
+      "addresses": [
+        "R1e EXIST",
+        "R2d TIME"
+      ],
+      "bond_notation": [
+        "R1e—R2d (EXIST—TIME)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 78,
+      "word": "also",
+      "definition": "in addition or too",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Addition collapses to WITH.",
+      "addresses": [
+        "R1b WITH"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 79,
+      "word": "than",
+      "definition": "introduces the comparison standard",
+      "semes": [
+        "ORDER",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "SIZE"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Comparative relation; grammatical marker role is conventional.",
+      "addresses": [
+        "R2c ORDER",
+        "R3b SIZE"
+      ],
+      "bond_notation": [
+        "R2c—R3b (ORDER—SIZE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 80,
+      "word": "him",
+      "definition": "a previously referenced male person",
+      "semes": [
+        "ALIVE",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "ALIVE",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Gender and case are absent.",
+      "addresses": [
+        "R4a ALIVE",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R4a—R4c (ALIVE—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R4a–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 81,
+      "word": "into",
+      "definition": "movement toward the inside",
+      "semes": [
+        "CHANGE",
+        "IN",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "IN"
+        ],
+        [
+          "IN",
+          "PLACE"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Change into an interior spatial relation.",
+      "addresses": [
+        "R1d CHANGE",
+        "R2a IN",
+        "R3a PLACE"
+      ],
+      "bond_notation": [
+        "R1d—R2a (CHANGE—IN)",
+        "R2a—R3a (IN—PLACE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 82,
+      "word": "only",
+      "definition": "alone in a class or category",
+      "semes": [
+        "NEGATION",
+        "ONE"
+      ],
+      "bonds": [
+        [
+          "NEGATION",
+          "ONE"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "One excluding alternatives; shares its core with OTHER.",
+      "addresses": [
+        "R1a NEGATION",
+        "R2f ONE"
+      ],
+      "bond_notation": [
+        "R1a—R2f (NEGATION—ONE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 83,
+      "word": "want",
+      "definition": "desire or wish",
+      "semes": [
+        "WANT"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R4f WANT"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 84,
+      "word": "look",
+      "definition": "direct one's gaze in a particular direction",
+      "semes": [
+        "DO",
+        "ORDER",
+        "PERCEIVE"
+      ],
+      "bonds": [
+        [
+          "DO",
+          "ORDER"
+        ],
+        [
+          "ORDER",
+          "PERCEIVE"
+        ]
+      ],
+      "flags": [
+        "blocked-current-layout"
+      ],
+      "notes": "Intentional directed perception.",
+      "addresses": [
+        "R2e DO",
+        "R2c ORDER",
+        "R4b PERCEIVE"
+      ],
+      "bond_notation": [
+        "R2e—R2c (DO—ORDER)",
+        "R2c—R4b (ORDER—PERCEIVE)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R2e–R2c cannot bond directly",
+          "R2c–R4b cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 85,
+      "word": "these",
+      "definition": "plural of THIS",
+      "semes": [
+        "MANY",
+        "PLACE",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "PLACE"
+        ],
+        [
+          "PLACE",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap"
+      ],
+      "notes": "Plural deictic referent; proximal vs distal distinction is absent.",
+      "addresses": [
+        "R2b MANY",
+        "R3a PLACE",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R2b—R3a (MANY—PLACE)",
+        "R3a—R4c (PLACE—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 86,
+      "word": "its",
+      "definition": "belonging to a previously mentioned thing",
+      "semes": [
+        "WITH",
+        "THING",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "THING"
+        ],
+        [
+          "THING",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "blocked-current-layout"
+      ],
+      "notes": "Possession plus anaphoric thing.",
+      "addresses": [
+        "R1b WITH",
+        "R1f THING",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R1b—R1f (WITH—THING)",
+        "R1f—R4c (THING—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R1b–R1f cannot bond directly",
+          "R1f–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 87,
+      "word": "new",
+      "definition": "recently created or not old",
+      "semes": [
+        "CHANGE",
+        "TIME"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "TIME"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Change anchored in recent time.",
+      "addresses": [
+        "R1d CHANGE",
+        "R2d TIME"
+      ],
+      "bond_notation": [
+        "R1d—R2d (CHANGE—TIME)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 88,
+      "word": "give",
+      "definition": "hand or present something to another",
+      "semes": [
+        "CHANGE",
+        "DO",
+        "WITH"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "DO"
+        ],
+        [
+          "DO",
+          "WITH"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Transfer roles/direction are not explicit.",
+      "addresses": [
+        "R1d CHANGE",
+        "R2e DO",
+        "R1b WITH"
+      ],
+      "bond_notation": [
+        "R1d—R2e (CHANGE—DO)",
+        "R2e—R1b (DO—WITH)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R1-R2 requires incompatible radial alignments"
+        ]
+      }
+    },
+    {
+      "rank": 89,
+      "word": "first",
+      "definition": "before all others in time or place",
+      "semes": [
+        "ONE",
+        "ORDER"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "ORDER"
+        ]
+      ],
+      "flags": [
+        "conventional",
+        "blocked-current-layout"
+      ],
+      "notes": "Extremal ordered position.",
+      "addresses": [
+        "R2f ONE",
+        "R2c ORDER"
+      ],
+      "bond_notation": [
+        "R2f—R2c (ONE—ORDER)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R2f–R2c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 90,
+      "word": "way",
+      "definition": "a manner or characteristic of doing",
+      "semes": [
+        "QUALITY",
+        "DO"
+      ],
+      "bonds": [
+        [
+          "QUALITY",
+          "DO"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Quality/manner of action.",
+      "addresses": [
+        "R1c QUALITY",
+        "R2e DO"
+      ],
+      "bond_notation": [
+        "R1c—R2e (QUALITY—DO)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 91,
+      "word": "thing",
+      "definition": "an unspecified entity, object, animal, or quality",
+      "semes": [
+        "THING"
+      ],
+      "bonds": [],
+      "flags": [
+        "clean"
+      ],
+      "notes": "",
+      "addresses": [
+        "R1f THING"
+      ],
+      "bond_notation": [],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 92,
+      "word": "any",
+      "definition": "an unspecified or nonparticular one",
+      "semes": [
+        "ONE",
+        "POSSIBILITY"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "POSSIBILITY"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Any one among possible selections.",
+      "addresses": [
+        "R2f ONE",
+        "R3f POSSIBILITY"
+      ],
+      "bond_notation": [
+        "R2f—R3f (ONE—POSSIBILITY)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 93,
+      "word": "over",
+      "definition": "upward or across a place",
+      "semes": [
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "flags": [
+        "inventory-gap"
+      ],
+      "notes": "Spatial ordering is captured; vertical/across topology is not distinguished.",
+      "addresses": [
+        "R2c ORDER",
+        "R3a PLACE"
+      ],
+      "bond_notation": [
+        "R2c—R3a (ORDER—PLACE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 94,
+      "word": "right",
+      "definition": "true, correct, or acceptable",
+      "semes": [
+        "VALUE",
+        "KNOW",
+        "EXIST"
+      ],
+      "bonds": [
+        [
+          "VALUE",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "EXIST"
+        ]
+      ],
+      "flags": [
+        "polysemy",
+        "blocked-current-layout"
+      ],
+      "notes": "Definition mixes evaluative and truth senses.",
+      "addresses": [
+        "R4e VALUE",
+        "R4c KNOW",
+        "R1e EXIST"
+      ],
+      "bond_notation": [
+        "R4e—R4c (VALUE—KNOW)",
+        "R4c—R1e (KNOW—EXIST)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R4e–R4c cannot bond directly",
+          "R4c–R1e cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 95,
+      "word": "after",
+      "definition": "following later in time",
+      "semes": [
+        "ORDER",
+        "TIME"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "TIME"
+        ]
+      ],
+      "flags": [
+        "inventory-gap"
+      ],
+      "notes": "Temporal ordering is clear; before/after polarity relies on convention/context.",
+      "addresses": [
+        "R2c ORDER",
+        "R2d TIME"
+      ],
+      "bond_notation": [
+        "R2c—R2d (ORDER—TIME)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 96,
+      "word": "find",
+      "definition": "discover something",
+      "semes": [
+        "PERCEIVE",
+        "KNOW"
+      ],
+      "bonds": [
+        [
+          "PERCEIVE",
+          "KNOW"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Discovery as perception/recognition; acquisition-of-knowledge change is implicit.",
+      "addresses": [
+        "R4b PERCEIVE",
+        "R4c KNOW"
+      ],
+      "bond_notation": [
+        "R4b—R4c (PERCEIVE—KNOW)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 97,
+      "word": "day",
+      "definition": "a standard 24-hour unit of time",
+      "semes": [
+        "TIME",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "TIME",
+          "SIZE"
+        ]
+      ],
+      "flags": [
+        "clean",
+        "conventional"
+      ],
+      "notes": "Exact unit must be lexicalized, so DAY and YEAR share a structural core.",
+      "addresses": [
+        "R2d TIME",
+        "R3b SIZE"
+      ],
+      "bond_notation": [
+        "R2d—R3b (TIME—SIZE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 98,
+      "word": "where",
+      "definition": "asks at or in what place",
+      "semes": [
+        "PLACE",
+        "NEGATION",
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "PLACE",
+          "KNOW"
+        ],
+        [
+          "NEGATION",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "flags": [
+        "inventory-gap",
+        "blocked-current-layout"
+      ],
+      "notes": "Unknown-place question; interrogativity is absent.",
+      "addresses": [
+        "R3a PLACE",
+        "R1a NEGATION",
+        "R4c KNOW",
+        "R4d SIGN"
+      ],
+      "bond_notation": [
+        "R3a—R4c (PLACE—KNOW)",
+        "R1a—R4c (NEGATION—KNOW)",
+        "R4c—R4d (KNOW—SIGN)"
+      ],
+      "layout": {
+        "direct": false,
+        "reasons": [
+          "R1a–R4c cannot bond directly"
+        ]
+      }
+    },
+    {
+      "rank": 99,
+      "word": "most",
+      "definition": "almost all or the greatest share",
+      "semes": [
+        "MANY",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "SIZE"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Large magnitude of a plurality.",
+      "addresses": [
+        "R2b MANY",
+        "R3b SIZE"
+      ],
+      "bond_notation": [
+        "R2b—R3b (MANY—SIZE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    },
+    {
+      "rank": 100,
+      "word": "should",
+      "definition": "proper, reasonable, or ought",
+      "semes": [
+        "NECESSITY",
+        "VALUE"
+      ],
+      "bonds": [
+        [
+          "NECESSITY",
+          "VALUE"
+        ]
+      ],
+      "flags": [
+        "clean"
+      ],
+      "notes": "Normative necessity.",
+      "addresses": [
+        "R3e NECESSITY",
+        "R4e VALUE"
+      ],
+      "bond_notation": [
+        "R3e—R4e (NECESSITY—VALUE)"
+      ],
+      "layout": {
+        "direct": true,
+        "reasons": []
+      }
+    }
+  ]
+}

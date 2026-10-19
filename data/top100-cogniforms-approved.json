@@ -1,0 +1,2309 @@
+{
+  "version": "1.0-approved",
+  "approved_at": "2026-10-19",
+  "source": "https://raw.githubusercontent.com/evan-007/ngsl-dictionary/master/NGSL-Headwords-and-Definitions-byFreq.csv",
+  "rules": {
+    "routed_bonds": "Semantic bonds may route through legal lattice segments. An inactive seme crossed by a route remains unmarked and contributes no meaning.",
+    "activation": "Only explicitly active seme nodes contribute meaning.",
+    "query": "QUERY is structural, not a seme.",
+    "index": "INDEX is structural, not a seme.",
+    "order_polarity": "ORDER may carry + or - orientation along an understood dimension.",
+    "measure": "Quantitative payloads attach without creating new semes.",
+    "polysemy": "Polysemous English words split by sense.",
+    "normalization": "English grammatical distinctions may collapse when they are not semantic distinctions."
+  },
+  "seme_coordinates": {
+    "NEGATION": "R1a",
+    "WITH": "R1b",
+    "QUALITY": "R1c",
+    "CHANGE": "R1d",
+    "EXIST": "R1e",
+    "THING": "R1f",
+    "IN": "R2a",
+    "MANY": "R2b",
+    "ORDER": "R2c",
+    "TIME": "R2d",
+    "DO": "R2e",
+    "ONE": "R2f",
+    "PLACE": "R3a",
+    "SIZE": "R3b",
+    "POWER": "R3c",
+    "CAUSE": "R3d",
+    "NECESSITY": "R3e",
+    "POSSIBILITY": "R3f",
+    "ALIVE": "R4a",
+    "PERCEIVE": "R4b",
+    "KNOW": "R4c",
+    "SIGN": "R4d",
+    "VALUE": "R4e",
+    "WANT": "R4f"
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "word": "the",
+      "source_definition": "points to an already identified referent",
+      "semes": [],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "established referent",
+      "notes": "Structural reference operator.",
+      "form_type": "structural",
+      "canonical_form": "∅ ⟦@R⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 2,
+      "word": "be",
+      "source_definition": "shows identity of a thing",
+      "semes": [
+        "ONE"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "ONE supplies identity/sameness; copular predication remains structural/contextual.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ONE",
+      "status": "approved"
+    },
+    {
+      "rank": 3,
+      "word": "of",
+      "source_definition": "belonging to or connected with",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "Broad relational core.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH",
+      "status": "approved"
+    },
+    {
+      "rank": 4,
+      "word": "and",
+      "source_definition": "joins words or groups",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "Conceptual conjunction collapses to WITH.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH",
+      "status": "approved"
+    },
+    {
+      "rank": 5,
+      "word": "to",
+      "source_definition": "indicates place or direction",
+      "semes": [
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "ORDER",
+          "axis": "PLACE",
+          "value": "+"
+        }
+      ],
+      "reading": "toward / goal-directed place",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ORDER—PLACE ⟦ORDER+[PLACE]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 6,
+      "word": "a",
+      "source_definition": "an unspecified single thing under consideration",
+      "semes": [
+        "ONE",
+        "THING"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "THING"
+        ]
+      ],
+      "operators": [],
+      "reading": "Indefinite singular entity.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ONE—THING",
+      "status": "approved"
+    },
+    {
+      "rank": 7,
+      "word": "in",
+      "source_definition": "inside or surrounded by",
+      "semes": [
+        "IN"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "IN",
+      "status": "approved"
+    },
+    {
+      "rank": 8,
+      "word": "have",
+      "source_definition": "possess, own, or hold",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "Possession is a WITH-relation; possessor/possessed roles are contextual.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH",
+      "status": "approved"
+    },
+    {
+      "rank": 9,
+      "word": "it",
+      "source_definition": "a previously mentioned thing",
+      "semes": [
+        "THING"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "THING",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "previously established thing",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "THING ⟦@R→THING⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 10,
+      "word": "you",
+      "source_definition": "the person being addressed",
+      "semes": [
+        "ALIVE"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "addressee",
+          "label": "@A"
+        }
+      ],
+      "reading": "addressed living participant",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ALIVE ⟦@A→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 11,
+      "word": "for",
+      "source_definition": "purpose or need",
+      "semes": [
+        "NECESSITY",
+        "WANT"
+      ],
+      "bonds": [
+        [
+          "NECESSITY",
+          "WANT"
+        ]
+      ],
+      "operators": [],
+      "reading": "Teleological/need relation.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "NECESSITY—WANT",
+      "status": "approved"
+    },
+    {
+      "rank": 12,
+      "word": "not",
+      "source_definition": "makes an expression negative",
+      "semes": [
+        "NEGATION"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "NEGATION",
+      "status": "approved"
+    },
+    {
+      "rank": 13,
+      "word": "that",
+      "source_definition": "identifies a specific person, thing, fact, or idea",
+      "semes": [
+        "THING"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "THING",
+          "mode": "origin",
+          "label": "@O:far",
+          "distance": "far"
+        }
+      ],
+      "reading": "distal identified referent",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "THING ⟦@O:far→THING⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 14,
+      "word": "on",
+      "source_definition": "contact/support at a location",
+      "semes": [
+        "WITH",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "PLACE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Semantically natural pair; current geometry separates the semes by an intervening ring.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH—PLACE",
+      "status": "approved"
+    },
+    {
+      "rank": 15,
+      "word": "with",
+      "source_definition": "together or in association",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH",
+      "status": "approved"
+    },
+    {
+      "rank": 16,
+      "word": "do",
+      "source_definition": "perform an action or activity",
+      "semes": [
+        "DO"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "DO",
+      "status": "approved"
+    },
+    {
+      "rank": 17,
+      "word": "as",
+      "source_definition": "the same degree or amount",
+      "semes": [
+        "ONE",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "SIZE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Equality of magnitude.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ONE—SIZE",
+      "status": "approved"
+    },
+    {
+      "rank": 18,
+      "word": "he",
+      "source_definition": "a previously referenced male person",
+      "semes": [
+        "ALIVE"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "established living participant",
+      "notes": "Gender omitted unless semantically relevant.",
+      "form_type": "cognitoform",
+      "canonical_form": "ALIVE ⟦@R→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 19,
+      "word": "we",
+      "source_definition": "speaker plus one or more others",
+      "semes": [
+        "MANY",
+        "ALIVE"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "ALIVE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "origin",
+          "label": "@O"
+        }
+      ],
+      "reading": "speaker-inclusive plurality",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "MANY—ALIVE ⟦@O→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 20,
+      "word": "this",
+      "source_definition": "identifies a specific nearby referent",
+      "semes": [
+        "THING"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "THING",
+          "mode": "origin",
+          "label": "@O:near",
+          "distance": "near"
+        }
+      ],
+      "reading": "proximal identified referent",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "THING ⟦@O:near→THING⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 21,
+      "word": "at",
+      "source_definition": "indicates a location",
+      "semes": [
+        "PLACE"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "PLACE",
+      "status": "approved"
+    },
+    {
+      "rank": 22,
+      "word": "they",
+      "source_definition": "previously mentioned plural entities",
+      "semes": [
+        "MANY"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "MANY",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "established plurality",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "MANY ⟦@R→MANY⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 23,
+      "word": "but",
+      "source_definition": "joins while contrasting",
+      "semes": [
+        "NEGATION",
+        "WITH"
+      ],
+      "bonds": [
+        [
+          "NEGATION",
+          "WITH"
+        ]
+      ],
+      "operators": [],
+      "reading": "Connection plus opposition/contrast.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "NEGATION—WITH",
+      "status": "approved"
+    },
+    {
+      "rank": 24,
+      "word": "from",
+      "source_definition": "marks an origin or starting direction",
+      "semes": [
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "ORDER",
+          "axis": "PLACE",
+          "value": "-"
+        }
+      ],
+      "reading": "source / away-directed place",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ORDER—PLACE ⟦ORDER-[PLACE]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 25,
+      "word": "by",
+      "source_definition": "beside or near a place",
+      "semes": [
+        "WITH",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "PLACE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Proximity/contact relation.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH—PLACE",
+      "status": "approved"
+    },
+    {
+      "rank": 26,
+      "word": "will",
+      "source_definition": "expected future event",
+      "semes": [
+        "ORDER",
+        "TIME",
+        "POSSIBILITY"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "TIME"
+        ],
+        [
+          "TIME",
+          "POSSIBILITY"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "ORDER",
+          "axis": "TIME",
+          "value": "+"
+        }
+      ],
+      "reading": "future expected possibility",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ORDER—TIME ; TIME—POSSIBILITY ⟦ORDER+[TIME]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 27,
+      "word": "or",
+      "source_definition": "links alternatives",
+      "semes": [
+        "MANY",
+        "POSSIBILITY"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "POSSIBILITY"
+        ]
+      ],
+      "operators": [],
+      "reading": "Multiple possible alternatives.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "MANY—POSSIBILITY",
+      "status": "approved"
+    },
+    {
+      "rank": 28,
+      "word": "his",
+      "source_definition": "belonging to a previously referenced male",
+      "semes": [
+        "WITH",
+        "ALIVE"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "ALIVE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "possession by established living referent",
+      "notes": "Gender omitted.",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH—ALIVE ⟦@R→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 29,
+      "word": "say",
+      "source_definition": "express something with words or voice",
+      "semes": [
+        "DO",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "DO",
+          "SIGN"
+        ]
+      ],
+      "operators": [],
+      "reading": "Action plus sign/utterance.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "DO—SIGN",
+      "status": "approved"
+    },
+    {
+      "rank": 30,
+      "word": "go",
+      "source_definition": "move or travel from one place to another",
+      "semes": [
+        "CHANGE",
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "ORDER"
+        ],
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Directed change of place.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CHANGE—ORDER ; ORDER—PLACE",
+      "status": "approved"
+    },
+    {
+      "rank": 31,
+      "word": "she",
+      "source_definition": "a previously referenced female person",
+      "semes": [
+        "ALIVE"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "established living participant",
+      "notes": "Gender omitted unless semantically relevant.",
+      "form_type": "cognitoform",
+      "canonical_form": "ALIVE ⟦@R→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 32,
+      "word": "so",
+      "source_definition": "to a stated or suggested degree",
+      "semes": [
+        "SIZE"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "Degree is treated as magnitude.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "SIZE",
+      "status": "approved"
+    },
+    {
+      "rank": 33,
+      "word": "all",
+      "source_definition": "the whole or total amount",
+      "semes": [
+        "ONE",
+        "IN",
+        "MANY"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "IN"
+        ],
+        [
+          "IN",
+          "MANY"
+        ]
+      ],
+      "operators": [],
+      "reading": "Many contained as one whole.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ONE—IN ; IN—MANY",
+      "status": "approved"
+    },
+    {
+      "rank": 34,
+      "word": "about",
+      "source_definition": "on the subject of or concerning",
+      "semes": [
+        "KNOW",
+        "SIGN"
+      ],
+      "bonds": [
+        [
+          "KNOW",
+          "SIGN"
+        ]
+      ],
+      "operators": [],
+      "reading": "Semantic-content/topic relation; grammatical ABOUT remains conventional.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "KNOW—SIGN",
+      "status": "approved"
+    },
+    {
+      "rank": 35,
+      "word": "if",
+      "source_definition": "introduces a condition for something to happen",
+      "semes": [
+        "CAUSE",
+        "POSSIBILITY"
+      ],
+      "bonds": [
+        [
+          "CAUSE",
+          "POSSIBILITY"
+        ]
+      ],
+      "operators": [],
+      "reading": "Condition as possible causal dependency.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CAUSE—POSSIBILITY",
+      "status": "approved"
+    },
+    {
+      "rank": 36,
+      "word": "one",
+      "source_definition": "a single person or thing",
+      "semes": [
+        "ONE"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ONE",
+      "status": "approved"
+    },
+    {
+      "rank": 37,
+      "word": "my",
+      "source_definition": "belonging to the speaker",
+      "semes": [
+        "WITH",
+        "ALIVE"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "ALIVE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "origin",
+          "label": "@O"
+        }
+      ],
+      "reading": "possession by discourse origin",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH—ALIVE ⟦@O→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 38,
+      "word": "know",
+      "source_definition": "have in the mind; be aware",
+      "semes": [
+        "KNOW"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "KNOW",
+      "status": "approved"
+    },
+    {
+      "rank": 39,
+      "word": "there",
+      "source_definition": "in that place or location",
+      "semes": [
+        "PLACE"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "PLACE",
+          "mode": "origin",
+          "label": "@O:far",
+          "distance": "far"
+        }
+      ],
+      "reading": "distal place",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "PLACE ⟦@O:far→PLACE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 40,
+      "word": "which",
+      "source_definition": "asks which member or members of a group",
+      "semes": [
+        "ONE",
+        "MANY"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "MANY"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "query",
+          "target": "ONE"
+        }
+      ],
+      "reading": "requested selection from an established set",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ONE—MANY ⟦?ONE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 41,
+      "word": "can",
+      "source_definition": "be able to do",
+      "semes": [
+        "POWER"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "Ability/capacity.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "POWER",
+      "status": "approved"
+    },
+    {
+      "rank": 42,
+      "word": "get",
+      "source_definition": "obtain or receive",
+      "semes": [
+        "CHANGE",
+        "WITH"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "WITH"
+        ]
+      ],
+      "operators": [],
+      "reading": "Acquisition as change of relation/possession.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CHANGE—WITH",
+      "status": "approved"
+    },
+    {
+      "rank": 43,
+      "word": "her",
+      "source_definition": "a previously referenced female person",
+      "semes": [
+        "ALIVE"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "established living participant",
+      "notes": "Gender/case omitted.",
+      "form_type": "cognitoform",
+      "canonical_form": "ALIVE ⟦@R→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 44,
+      "word": "would",
+      "source_definition": "a conceived or conditional possible event",
+      "semes": [
+        "TIME",
+        "POSSIBILITY",
+        "KNOW"
+      ],
+      "bonds": [
+        [
+          "TIME",
+          "POSSIBILITY"
+        ],
+        [
+          "POSSIBILITY",
+          "KNOW"
+        ]
+      ],
+      "operators": [],
+      "reading": "Mentally entertained possibility in time; conditional/counterfactual force is conventional.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "TIME—POSSIBILITY ; POSSIBILITY—KNOW",
+      "status": "approved"
+    },
+    {
+      "rank": 45,
+      "word": "think",
+      "source_definition": "hold a belief or idea in mind",
+      "semes": [
+        "KNOW"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "KNOW is non-factive cognition, so it covers THINK without asserting truth.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "KNOW",
+      "status": "approved"
+    },
+    {
+      "rank": 46,
+      "word": "like",
+      "source_definition": "find agreeable or enjoyable",
+      "semes": [
+        "VALUE",
+        "WANT"
+      ],
+      "bonds": [
+        [
+          "VALUE",
+          "WANT"
+        ]
+      ],
+      "operators": [],
+      "reading": "Positive valuation/desire.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "VALUE—WANT",
+      "status": "approved"
+    },
+    {
+      "rank": 47,
+      "word": "more",
+      "source_definition": "greater amount, number, or size",
+      "semes": [
+        "ORDER",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "SIZE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "ORDER",
+          "axis": "SIZE",
+          "value": "+"
+        }
+      ],
+      "reading": "greater magnitude",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ORDER—SIZE ⟦ORDER+[SIZE]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 48,
+      "word": "their",
+      "source_definition": "belonging to a previously mentioned group",
+      "semes": [
+        "WITH",
+        "MANY"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "MANY"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "target": "MANY",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "possession by established plurality",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH—MANY ⟦@R→MANY⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 49,
+      "word": "your",
+      "source_definition": "belonging to the addressee",
+      "semes": [
+        "WITH",
+        "ALIVE"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "ALIVE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "addressee",
+          "label": "@A"
+        }
+      ],
+      "reading": "possession by addressee",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH—ALIVE ⟦@A→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 50,
+      "word": "when",
+      "source_definition": "asks at what time",
+      "semes": [
+        "TIME"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "query",
+          "target": "TIME"
+        }
+      ],
+      "reading": "requested time",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "TIME ⟦?TIME⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 51,
+      "word": "what",
+      "source_definition": "asks for information about a thing",
+      "semes": [
+        "THING"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "query",
+          "target": "THING"
+        }
+      ],
+      "reading": "requested thing / information-bearing entity",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "THING ⟦?THING⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 52,
+      "word": "make",
+      "source_definition": "build, create, or produce",
+      "semes": [
+        "CHANGE",
+        "DO",
+        "CAUSE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "DO"
+        ],
+        [
+          "DO",
+          "CAUSE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Action causing change.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CHANGE—DO ; DO—CAUSE",
+      "status": "approved"
+    },
+    {
+      "rank": 53,
+      "word": "time",
+      "source_definition": "measured temporal extent",
+      "semes": [
+        "TIME"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "TIME",
+      "status": "approved"
+    },
+    {
+      "rank": 54,
+      "word": "who",
+      "source_definition": "asks which person or people",
+      "semes": [
+        "ALIVE"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "query",
+          "target": "ALIVE"
+        }
+      ],
+      "reading": "requested living participant",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ALIVE ⟦?ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 55,
+      "word": "see",
+      "source_definition": "become aware through vision",
+      "semes": [
+        "PERCEIVE",
+        "KNOW"
+      ],
+      "bonds": [
+        [
+          "PERCEIVE",
+          "KNOW"
+        ]
+      ],
+      "operators": [],
+      "reading": "Perception yielding cognition/awareness.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "PERCEIVE—KNOW",
+      "status": "approved"
+    },
+    {
+      "rank": 56,
+      "word": "up",
+      "source_definition": "movement toward a higher place",
+      "semes": [
+        "CHANGE",
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "ORDER"
+        ],
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "ORDER",
+          "axis": "PLACE:vertical",
+          "value": "+"
+        }
+      ],
+      "reading": "movement toward higher place",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CHANGE—ORDER ; ORDER—PLACE ⟦ORDER+[PLACE:vertical]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 57,
+      "word": "people",
+      "source_definition": "human beings, plural",
+      "semes": [
+        "MANY",
+        "ALIVE"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "ALIVE"
+        ]
+      ],
+      "operators": [],
+      "reading": "plural living persons",
+      "notes": "Human specificity remains lexical/contextual.",
+      "form_type": "cognitoform",
+      "canonical_form": "MANY—ALIVE",
+      "status": "approved"
+    },
+    {
+      "rank": 58,
+      "word": "some",
+      "source_definition": "an unspecified amount or number",
+      "semes": [
+        "MANY"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "Indefinite quantity is contextual.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "MANY",
+      "status": "approved"
+    },
+    {
+      "rank": 59,
+      "word": "out",
+      "source_definition": "away from the inside or center",
+      "semes": [
+        "NEGATION",
+        "IN"
+      ],
+      "bonds": [
+        [
+          "NEGATION",
+          "IN"
+        ]
+      ],
+      "operators": [],
+      "reading": "Captures outside/not-in; motion away is left to context.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "NEGATION—IN",
+      "status": "approved"
+    },
+    {
+      "rank": 60,
+      "word": "me",
+      "source_definition": "the speaker",
+      "semes": [
+        "ONE",
+        "ALIVE"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "ALIVE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "origin",
+          "label": "@O"
+        }
+      ],
+      "reading": "single discourse-origin participant",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ONE—ALIVE ⟦@O→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 61,
+      "word": "good",
+      "source_definition": "high quality or positive evaluation",
+      "semes": [
+        "VALUE"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "VALUE supplies positive evaluation; polarity is lexical/conventional.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "VALUE",
+      "status": "approved"
+    },
+    {
+      "rank": 62,
+      "word": "other",
+      "source_definition": "a different one from an already mentioned referent",
+      "semes": [
+        "NEGATION",
+        "ONE"
+      ],
+      "bonds": [
+        [
+          "NEGATION",
+          "ONE"
+        ]
+      ],
+      "operators": [],
+      "reading": "A non-identical one; discourse anchor remains contextual.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "NEGATION—ONE",
+      "status": "approved"
+    },
+    {
+      "rank": 63,
+      "word": "year",
+      "source_definition": "a standard large unit of time",
+      "semes": [
+        "TIME"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "measure",
+          "target": "TIME",
+          "value": "1 year"
+        }
+      ],
+      "reading": "one conventional yearly duration",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "TIME ⟦TIME#(1 year)⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 64,
+      "word": "well",
+      "source_definition": "in a successful or good manner",
+      "semes": [
+        "DO",
+        "POWER",
+        "VALUE"
+      ],
+      "bonds": [
+        [
+          "DO",
+          "POWER"
+        ],
+        [
+          "POWER",
+          "VALUE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Effective action with positive value.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "DO—POWER ; POWER—VALUE",
+      "status": "approved"
+    },
+    {
+      "rank": 65,
+      "word": "our",
+      "source_definition": "belonging to speaker plus others",
+      "semes": [
+        "WITH",
+        "MANY",
+        "ALIVE"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "MANY"
+        ],
+        [
+          "MANY",
+          "ALIVE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "origin",
+          "label": "@O"
+        }
+      ],
+      "reading": "possession by speaker-inclusive plurality",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH—MANY ; MANY—ALIVE ⟦@O→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 66,
+      "word": "very",
+      "source_definition": "to a high degree",
+      "semes": [
+        "ORDER",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "SIZE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "ORDER",
+          "axis": "SIZE",
+          "value": "+"
+        }
+      ],
+      "reading": "high degree",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ORDER—SIZE ⟦ORDER+[SIZE]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 67,
+      "word": "just",
+      "source_definition": "exactly or to an exact degree or manner",
+      "semes": [
+        "ONE",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "SIZE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Singular/exact magnitude.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ONE—SIZE",
+      "status": "approved"
+    },
+    {
+      "rank": 68,
+      "word": "them",
+      "source_definition": "previously mentioned plural entities",
+      "semes": [
+        "MANY"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "MANY",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "established plurality",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "MANY ⟦@R→MANY⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 69,
+      "word": "no",
+      "source_definition": "negative response or not at all",
+      "semes": [
+        "NEGATION"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "NEGATION",
+      "status": "approved"
+    },
+    {
+      "rank": 70,
+      "word": "take",
+      "source_definition": "carry or move something",
+      "semes": [
+        "CHANGE",
+        "WITH",
+        "DO"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "WITH"
+        ],
+        [
+          "WITH",
+          "DO"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "mode": "viewpoint",
+          "role": "goal",
+          "label": "@V:goal"
+        }
+      ],
+      "reading": "transfer viewed toward receiving side",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CHANGE—WITH ; WITH—DO ⟦@V:goal⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 71,
+      "word": "because",
+      "source_definition": "for a reason",
+      "semes": [
+        "CAUSE"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CAUSE",
+      "status": "approved"
+    },
+    {
+      "rank": 72,
+      "word": "come",
+      "source_definition": "move toward someone or approach",
+      "semes": [
+        "CHANGE",
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "ORDER"
+        ],
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "mode": "origin",
+          "role": "goal",
+          "label": "@O:goal"
+        }
+      ],
+      "reading": "movement toward discourse origin",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CHANGE—ORDER ; ORDER—PLACE ⟦@O:goal⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 73,
+      "word": "could",
+      "source_definition": "past ability or possibility",
+      "semes": [
+        "ORDER",
+        "TIME",
+        "POSSIBILITY"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "TIME"
+        ],
+        [
+          "TIME",
+          "POSSIBILITY"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "ORDER",
+          "axis": "TIME",
+          "value": "-"
+        }
+      ],
+      "reading": "past-oriented possibility / ability",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ORDER—TIME ; TIME—POSSIBILITY ⟦ORDER-[TIME]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 74,
+      "word": "use",
+      "source_definition": "do something with another thing",
+      "semes": [
+        "WITH",
+        "DO"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "DO"
+        ]
+      ],
+      "operators": [],
+      "reading": "Action involving another entity.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH—DO",
+      "status": "approved"
+    },
+    {
+      "rank": 75,
+      "word": "work",
+      "source_definition": "activity requiring mental or physical effort",
+      "semes": [
+        "DO",
+        "POWER"
+      ],
+      "bonds": [
+        [
+          "DO",
+          "POWER"
+        ]
+      ],
+      "operators": [],
+      "reading": "Exerted/capable action.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "DO—POWER",
+      "status": "approved"
+    },
+    {
+      "rank": 76,
+      "word": "then",
+      "source_definition": "at the mentioned time or after that",
+      "semes": [
+        "ORDER",
+        "TIME"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "TIME"
+        ]
+      ],
+      "operators": [],
+      "reading": "Ordered temporal position; exact deictic anchor comes from context.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ORDER—TIME",
+      "status": "approved"
+    },
+    {
+      "rank": 77,
+      "word": "now",
+      "source_definition": "the present time",
+      "semes": [
+        "EXIST",
+        "TIME"
+      ],
+      "bonds": [
+        [
+          "EXIST",
+          "TIME"
+        ]
+      ],
+      "operators": [],
+      "reading": "Actual/instantiated time = present.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "EXIST—TIME",
+      "status": "approved"
+    },
+    {
+      "rank": 78,
+      "word": "also",
+      "source_definition": "in addition or too",
+      "semes": [
+        "WITH"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "Addition collapses to WITH.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH",
+      "status": "approved"
+    },
+    {
+      "rank": 79,
+      "word": "than",
+      "source_definition": "introduces the comparison standard",
+      "semes": [
+        "ORDER",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "SIZE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Comparative relation; grammatical marker role is conventional.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ORDER—SIZE",
+      "status": "approved"
+    },
+    {
+      "rank": 80,
+      "word": "him",
+      "source_definition": "a previously referenced male person",
+      "semes": [
+        "ALIVE"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "index",
+          "target": "ALIVE",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "established living participant",
+      "notes": "Gender/case omitted.",
+      "form_type": "cognitoform",
+      "canonical_form": "ALIVE ⟦@R→ALIVE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 81,
+      "word": "into",
+      "source_definition": "movement toward the inside",
+      "semes": [
+        "CHANGE",
+        "IN",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "IN"
+        ],
+        [
+          "IN",
+          "PLACE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Change into an interior spatial relation.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CHANGE—IN ; IN—PLACE",
+      "status": "approved"
+    },
+    {
+      "rank": 82,
+      "word": "only",
+      "source_definition": "alone in a class or category",
+      "semes": [
+        "NEGATION",
+        "ONE"
+      ],
+      "bonds": [
+        [
+          "NEGATION",
+          "ONE"
+        ]
+      ],
+      "operators": [],
+      "reading": "One excluding alternatives; shares its core with OTHER.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "NEGATION—ONE",
+      "status": "approved"
+    },
+    {
+      "rank": 83,
+      "word": "want",
+      "source_definition": "desire or wish",
+      "semes": [
+        "WANT"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WANT",
+      "status": "approved"
+    },
+    {
+      "rank": 84,
+      "word": "look",
+      "source_definition": "direct one's gaze in a particular direction",
+      "semes": [
+        "DO",
+        "ORDER",
+        "PERCEIVE"
+      ],
+      "bonds": [
+        [
+          "DO",
+          "ORDER"
+        ],
+        [
+          "ORDER",
+          "PERCEIVE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Intentional directed perception.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "DO—ORDER ; ORDER—PERCEIVE",
+      "status": "approved"
+    },
+    {
+      "rank": 85,
+      "word": "these",
+      "source_definition": "plural of THIS",
+      "semes": [
+        "MANY",
+        "THING"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "THING"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "target": "THING",
+          "mode": "origin",
+          "label": "@O:near",
+          "distance": "near"
+        }
+      ],
+      "reading": "proximal plural referents",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "MANY—THING ⟦@O:near→THING⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 86,
+      "word": "its",
+      "source_definition": "belonging to a previously mentioned thing",
+      "semes": [
+        "WITH",
+        "THING"
+      ],
+      "bonds": [
+        [
+          "WITH",
+          "THING"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "target": "THING",
+          "mode": "referent",
+          "label": "@R"
+        }
+      ],
+      "reading": "possession by established thing",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "WITH—THING ⟦@R→THING⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 87,
+      "word": "new",
+      "source_definition": "recently created or not old",
+      "semes": [
+        "CHANGE",
+        "TIME"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "TIME"
+        ]
+      ],
+      "operators": [],
+      "reading": "Change anchored in recent time.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CHANGE—TIME",
+      "status": "approved"
+    },
+    {
+      "rank": 88,
+      "word": "give",
+      "source_definition": "hand or present something to another",
+      "semes": [
+        "CHANGE",
+        "WITH",
+        "DO"
+      ],
+      "bonds": [
+        [
+          "CHANGE",
+          "WITH"
+        ],
+        [
+          "WITH",
+          "DO"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "index",
+          "mode": "viewpoint",
+          "role": "source",
+          "label": "@V:source"
+        }
+      ],
+      "reading": "transfer viewed from giving side",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "CHANGE—WITH ; WITH—DO ⟦@V:source⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 89,
+      "word": "first",
+      "source_definition": "before all others in time or place",
+      "semes": [
+        "ONE",
+        "ORDER"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "ORDER"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "ORDER",
+          "axis": "sequence",
+          "value": "-"
+        }
+      ],
+      "reading": "one at the initial extreme of an order",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ONE—ORDER ⟦ORDER-[sequence]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 90,
+      "word": "way",
+      "source_definition": "a manner or characteristic of doing",
+      "semes": [
+        "QUALITY",
+        "DO"
+      ],
+      "bonds": [
+        [
+          "QUALITY",
+          "DO"
+        ]
+      ],
+      "operators": [],
+      "reading": "Quality/manner of action.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "QUALITY—DO",
+      "status": "approved"
+    },
+    {
+      "rank": 91,
+      "word": "thing",
+      "source_definition": "an unspecified entity, object, animal, or quality",
+      "semes": [
+        "THING"
+      ],
+      "bonds": [],
+      "operators": [],
+      "reading": "",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "THING",
+      "status": "approved"
+    },
+    {
+      "rank": 92,
+      "word": "any",
+      "source_definition": "an unspecified or nonparticular one",
+      "semes": [
+        "ONE",
+        "POSSIBILITY"
+      ],
+      "bonds": [
+        [
+          "ONE",
+          "POSSIBILITY"
+        ]
+      ],
+      "operators": [],
+      "reading": "Any one among possible selections.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ONE—POSSIBILITY",
+      "status": "approved"
+    },
+    {
+      "rank": 93,
+      "word": "over",
+      "source_definition": "upward or across a place",
+      "semes": [
+        "ORDER",
+        "PLACE"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "PLACE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "ORDER",
+          "axis": "PLACE:context",
+          "value": "+"
+        }
+      ],
+      "reading": "ordered spatial relation above/across",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ORDER—PLACE ⟦ORDER+[PLACE:context]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 94,
+      "word": "right",
+      "source_definition": "true, correct, or acceptable",
+      "semes": [
+        "VALUE",
+        "KNOW",
+        "EXIST"
+      ],
+      "bonds": [
+        [
+          "VALUE",
+          "KNOW"
+        ],
+        [
+          "KNOW",
+          "EXIST"
+        ]
+      ],
+      "operators": [],
+      "reading": "Definition mixes evaluative and truth senses.",
+      "notes": "",
+      "form_type": "polysemous",
+      "senses": [
+        {
+          "reading": "true / factually correct",
+          "semes": [
+            "KNOW",
+            "EXIST"
+          ],
+          "bonds": [
+            [
+              "KNOW",
+              "EXIST"
+            ]
+          ],
+          "operators": [],
+          "canonical_form": "KNOW—EXIST"
+        },
+        {
+          "reading": "acceptable / good",
+          "semes": [
+            "VALUE"
+          ],
+          "bonds": [],
+          "operators": [],
+          "canonical_form": "VALUE"
+        },
+        {
+          "reading": "rightward spatial direction",
+          "semes": [
+            "ORDER",
+            "PLACE"
+          ],
+          "bonds": [
+            [
+              "ORDER",
+              "PLACE"
+            ]
+          ],
+          "operators": [
+            {
+              "type": "order-polarity",
+              "target": "ORDER",
+              "axis": "PLACE:lateral",
+              "value": "+"
+            }
+          ],
+          "canonical_form": "ORDER—PLACE ⟦ORDER+[PLACE:lateral]⟧"
+        }
+      ],
+      "canonical_form": "sense 1 TRUE: KNOW—EXIST | sense 2 ACCEPTABLE: VALUE | sense 3 DIRECTION: ORDER—PLACE ⟦ORDER+[PLACE:lateral]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 95,
+      "word": "after",
+      "source_definition": "following later in time",
+      "semes": [
+        "ORDER",
+        "TIME"
+      ],
+      "bonds": [
+        [
+          "ORDER",
+          "TIME"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "ORDER",
+          "axis": "TIME",
+          "value": "+"
+        }
+      ],
+      "reading": "later in time",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "ORDER—TIME ⟦ORDER+[TIME]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 96,
+      "word": "find",
+      "source_definition": "discover something",
+      "semes": [
+        "PERCEIVE",
+        "KNOW"
+      ],
+      "bonds": [
+        [
+          "PERCEIVE",
+          "KNOW"
+        ]
+      ],
+      "operators": [],
+      "reading": "Discovery as perception/recognition; acquisition-of-knowledge change is implicit.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "PERCEIVE—KNOW",
+      "status": "approved"
+    },
+    {
+      "rank": 97,
+      "word": "day",
+      "source_definition": "a standard 24-hour unit of time",
+      "semes": [
+        "TIME"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "measure",
+          "target": "TIME",
+          "value": "24 h"
+        }
+      ],
+      "reading": "one day duration",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "TIME ⟦TIME#(24 h)⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 98,
+      "word": "where",
+      "source_definition": "asks at or in what place",
+      "semes": [
+        "PLACE"
+      ],
+      "bonds": [],
+      "operators": [
+        {
+          "type": "query",
+          "target": "PLACE"
+        }
+      ],
+      "reading": "requested place",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "PLACE ⟦?PLACE⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 99,
+      "word": "most",
+      "source_definition": "almost all or the greatest share",
+      "semes": [
+        "MANY",
+        "SIZE"
+      ],
+      "bonds": [
+        [
+          "MANY",
+          "SIZE"
+        ]
+      ],
+      "operators": [
+        {
+          "type": "order-polarity",
+          "target": "SIZE",
+          "axis": "quantity",
+          "value": "+"
+        }
+      ],
+      "reading": "greatest share / almost all",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "MANY—SIZE ⟦SIZE+[quantity]⟧",
+      "status": "approved"
+    },
+    {
+      "rank": 100,
+      "word": "should",
+      "source_definition": "proper, reasonable, or ought",
+      "semes": [
+        "NECESSITY",
+        "VALUE"
+      ],
+      "bonds": [
+        [
+          "NECESSITY",
+          "VALUE"
+        ]
+      ],
+      "operators": [],
+      "reading": "Normative necessity.",
+      "notes": "",
+      "form_type": "cognitoform",
+      "canonical_form": "NECESSITY—VALUE",
+      "status": "approved"
+    }
+  ]
+}
