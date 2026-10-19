@@ -273,3 +273,5 @@ code {
   .seme-label { font-size: 11px; }
   .seme-address { font-size: 8px; }
 }
+
+.top-actions{display:flex;gap:8px;align-items:center}.link-button{display:inline-flex;align-items:center;text-decoration:none}.link-button:hover{border-color:var(--accent)}
