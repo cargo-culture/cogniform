@@ -9,8 +9,10 @@ Interactive editor for the cogniform writing system.
 - Each seme occupies a ring/spoke intersection: R1a through R4f.
 - A concept is formed by bonding one or more semes.
 - Rings rotate independently and continuously.
-- Same-ring neighboring semes can bond circumferentially.
-- Adjacent-ring semes can bond radially when physically aligned through the center.
+- Same-ring neighboring positions connect circumferentially; aligned adjacent rings connect radially.
+- Semantic bonds may route through multiple legal physical segments.
+- Passing through an inactive seme does not activate or mark it; only explicitly active nodes contribute meaning.
+- Structural operators handle QUERY, INDEX, ORDER polarity, and MEASURE without expanding the 24-seme inventory.
 - Dynamic behavior is implemented in vanilla JavaScript.
 
 ## Current seme map
@@ -25,3 +27,11 @@ Interactive editor for the cogniform writing system.
 ## Web interface
 
 The repository root is a static web application intended for GitHub Pages deployment.
+
+## Approved specification
+
+See [SPEC.md](SPEC.md).
+
+## Top-100 lexicon
+
+The approved first 100 English frequency probes are stored in [data/top100-cogniforms-approved.json](data/top100-cogniforms-approved.json) and browsable at [lexicon/top100/](lexicon/top100/).
