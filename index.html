@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0f17">
+  <title>Cogniform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <h1>Cogniform</h1>
+        <p>Drag any ring in one continuous motion. Tap a bond target to add or remove a connection.</p>
+      </div>
+      <button id="resetBtn" class="button" type="button">Reset</button>
+    </header>
+
+    <section class="workspace" aria-label="Cogniform workspace">
+      <div class="canvas-card">
+        <svg id="cogniformSvg" viewBox="0 0 760 760" role="img"
+             aria-labelledby="svgTitle svgDesc">
+          <title id="svgTitle">Interactive four-ring cogniform</title>
+          <desc id="svgDesc">
+            Four independently rotatable rings containing six semes each.
+            Drag a ring continuously. Tap circumferential or aligned radial
+            connectors to toggle bonds.
+          </desc>
+          <g id="backgroundLayer"></g>
+          <g id="radialBondLayer"></g>
+          <g id="ringLayer"></g>
+        </svg>
+        <div id="status" class="status" role="status" aria-live="polite">
+          Touch a ring and drag.
+        </div>
+      </div>
+
+      <aside class="side-panel">
+        <section class="panel">
+          <h2>Ring rotation</h2>
+          <div id="angleReadout" class="angle-list"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Bond rules</h2>
+          <p>
+            Neighboring semes on the same ring can bond. Radial bonds are available
+            only when semes on adjacent rings are physically aligned through the center.
+          </p>
+        </section>
+      </aside>
+    </section>
+
+    <section class="notation-section">
+      <div class="notation-heading">
+        <div>
+          <h2>Live bond notation</h2>
+          <p>Addresses stay local to their ring even while that ring rotates.</p>
+        </div>
+      </div>
+
+      <div id="emptyState" class="empty-state">No bonds yet.</div>
+
+      <div id="bondTableWrap" class="table-wrap" hidden>
+        <table>
+          <thead>
+            <tr>
+              <th>Notation</th>
+              <th>Seme connection</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody id="bondRows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
