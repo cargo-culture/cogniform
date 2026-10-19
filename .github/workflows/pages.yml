@@ -35,7 +35,11 @@ jobs:
           git worktree add /tmp/cogniform-pages gh-pages
 
           find /tmp/cogniform-pages -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+
           cp index.html styles.css app.js /tmp/cogniform-pages/
+          cp -R data /tmp/cogniform-pages/
+          cp -R lexicon /tmp/cogniform-pages/
+          cp -R preview /tmp/cogniform-pages/
           touch /tmp/cogniform-pages/.nojekyll
 
           git -C /tmp/cogniform-pages add -A
