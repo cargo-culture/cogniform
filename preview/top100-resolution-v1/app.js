@@ -17,24 +17,24 @@
     on:{
       title:'ON — semantic relation vs physical route',
       problem:'WITH—PLACE is semantically natural but was marked impossible because R1 and R3 are separated by R2.',
-      reading:'Keep the semantic bond WITH—PLACE. Route it across legal adjacent segments; intermediate nodes are transit only.',
+      reading:'Keep the semantic bond WITH—PLACE. Route it across legal adjacent segments. Any inactive seme positions the line crosses remain visually inactive and contribute no meaning.',
       mechanisms:['ROUTED BOND'],
       active:['1b','3a'],
       semantic:[['1b','3a']],
       routes:[['1b','1a','2a','3a']],
       operators:[],
-      notation:'semantic: R1b—R3a   ·   route: R1b-[R1a]-[R2a]-R3a'
+      notation:'semantic: R1b—R3a   ·   physical path: R1b→R1a→R2a→R3a   ·   active: R1b, R3a'
     },
     say:{
       title:'SAY — routed DO—SIGN',
       problem:'DO—SIGN was blocked because the semes are separated by an intervening ring.',
-      reading:'The meaning remains DO—SIGN. The drawing route can pass through TIME and CAUSE without activating either seme.',
+      reading:'The meaning remains DO—SIGN. The line can pass through TIME and CAUSE while both nodes remain completely unmarked and inactive.',
       mechanisms:['ROUTED BOND'],
       active:['2e','4d'],
       semantic:[['2e','4d']],
       routes:[['2e','2d','3d','4d']],
       operators:[],
-      notation:'semantic: R2e—R4d   ·   route: R2e-[R2d]-[R3d]-R4d'
+      notation:'semantic: R2e—R4d   ·   physical path: R2e→R2d→R3d→R4d   ·   active: R2e, R4d'
     },
     truth:{
       title:'TRUTH — KNOW—EXIST survives intact',
@@ -45,7 +45,7 @@
       semantic:[['4c','1e']],
       routes:[['4c','4d','3d','2d','1d','1e']],
       operators:[],
-      notation:'semantic: R4c—R1e   ·   route: R4c-[R4d]-[R3d]-[R2d]-[R1d]-R1e'
+      notation:'semantic: R4c—R1e   ·   physical path: R4c→R4d→R3d→R2d→R1d→R1e   ·   active: R4c, R1e'
     },
     what:{
       title:'WHAT — query a semantic slot',
@@ -185,11 +185,6 @@
     }
 
     const active=new Set(ex.active);
-    const transit=new Set();
-    for(const path of ex.routes){
-      for(let i=1;i<path.length-1;i++)if(!active.has(path[i]))transit.add(path[i]);
-    }
-
     nodes.replaceChildren();
     route.replaceChildren();
     ops.replaceChildren();
@@ -209,7 +204,7 @@
 
     for(const id of allNodeIds()){
       const p=parse(id), xy=pos(id);
-      const g=make('g',{class:'node'+(active.has(id)?' active':'')+(view==='physical'&&transit.has(id)?' transit':'')});
+      const g=make('g',{class:'node'+(active.has(id)?' active':'')});
       g.setAttribute('transform','translate('+xy.x+' '+xy.y+')');
       g.appendChild(make('circle',{r:25}));
       const addr=make('text',{x:0,y:-7,class:'addr'});addr.textContent='R'+id;
