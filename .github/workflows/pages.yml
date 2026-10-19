@@ -1,4 +1,5 @@
 name: Deploy GitHub Pages
+# Pages enabled after repository was made public
 
 on:
   push:
